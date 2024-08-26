@@ -11,7 +11,7 @@ const AddBook = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:5000/travel/add", {
+    await axios.post("https://greatidea-backend.onrender.com/add", {
       title,
       description,
       image,
