@@ -13,7 +13,7 @@ const TravelBook = () => {
 
   const deleteHandler = async (e) => {
     e.preventDefault();
-    await axios.delete(`http://localhost:5000/travel/${id}`);
+    await axios.delete(`https://greatidea-backend.onrender.com/${id}`);
     fetchData();
   };
 
