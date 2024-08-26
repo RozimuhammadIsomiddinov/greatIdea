@@ -11,7 +11,7 @@ const UpdateBook = () => {
   const navigate = useNavigate();
 
   const fetchData = async () => {
-    const { data } = await axios.get(`http://localhost:5000/travel/${id}`);
+    const { data } = await axios.get(`https://greatidea-backend.onrender.com/${id}`);
     setTitle(data.travel.title);
     setdescription(data.travel.description);
     setImage(data.travel.image);
