@@ -7,7 +7,7 @@ const TravelBook = () => {
   const [id, setId] = useState("");
 
   const fetchData = async () => {
-    const { data } = await axios.get("http://localhost:5000/travel");
+    const { data } = await axios.get("https://greatidea-backend.onrender.com");
     setTravelBook(data.travels);
   };
 
