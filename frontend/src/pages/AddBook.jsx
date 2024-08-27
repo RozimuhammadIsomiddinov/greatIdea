@@ -11,7 +11,7 @@ const AddBook = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("https://greatidea-backend.onrender.com/add", {
+    await axios.post("https://great-idea-backend.vercel.app/add", {
       title,
       description,
       image,
