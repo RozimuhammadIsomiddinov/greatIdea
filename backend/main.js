@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(cors());
 
-app.use("/travel", app1);
+app.use("/", app1);
 app.listen(process.env.PORT, () => {
   console.log(`Server is listening on port: ${process.env.PORT}`);
 });
