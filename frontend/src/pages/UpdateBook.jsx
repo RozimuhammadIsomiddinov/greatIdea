@@ -11,7 +11,7 @@ const UpdateBook = () => {
   const navigate = useNavigate();
 
   const fetchData = async () => {
-    const { data } = await axios.get(`https://greatidea-backend.onrender.com/${id}`);
+    const { data } = await axios.get(`https://great-idea-backend.vercel.app/${id}`);
     setTitle(data.travel.title);
     setdescription(data.travel.description);
     setImage(data.travel.image);
@@ -19,7 +19,7 @@ const UpdateBook = () => {
 
   const updateHandler = async (e) => {
     e.preventDefault();
-    await axios.put(`http://localhost:5000/travel/${id}`, {
+    await axios.put(`http://great-idea-backend.vercel.app/${id}`, {
       title,
       description,
       image,
