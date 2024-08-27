@@ -7,13 +7,13 @@ const TravelBook = () => {
   const [id, setId] = useState("");
 
   const fetchData = async () => {
-    const { data } = await axios.get("https://greatidea-backend.onrender.com");
+    const { data } = await axios.get("https://great-idea-backend.vercel.app");
     setTravelBook(data.travels);
   };
 
   const deleteHandler = async (e) => {
     e.preventDefault();
-    await axios.delete(`https://greatidea-backend.onrender.com/${id}`);
+    await axios.delete(`https://great-idea-backend.vercel.app/${id}`);
     fetchData();
   };
 
